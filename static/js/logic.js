@@ -11,28 +11,28 @@ d3.json(url).then(function (data) {
     for (var i = 0; i < Data.length; i++) {
         var color = "";
         if (Data[i].geometry.coordinates[2] < 10){
-            color = "#6efa96";
+            color = "#6efaee";
         }
         else if (Data[i].geometry.coordinates[2] > 10 && Data[i].geometry.coordinates[2] < 20) {
-            color = "#6efa73";
+            color = "#6efaa1";
         }
         else if (Data[i].geometry.coordinates[2] > 20 && Data[i].geometry.coordinates[2] < 30) {
-            color = "#96fa6e";
+            color = "#77fa6e";
         }
         else if (Data[i].geometry.coordinates[2] > 30 && Data[i].geometry.coordinates[2] < 50) {
-            color = "#b6fa6e";
+            color = "#b4fa6e";
         }
         else if (Data[i].geometry.coordinates[2] > 50 && Data[i].geometry.coordinates[2] < 100) {
-            color = "#ecfa6e";
+            color = "#defa6e";
         }
         else if (Data[i].geometry.coordinates[2] > 100 && Data[i].geometry.coordinates[2] < 200) {
-            color = "#fad96e";
+            color = "yellow";
         }
         else if (Data[i].geometry.coordinates[2] > 200 && Data[i].geometry.coordinates[2] < 300) {
-            color = "#fabb6e";
+            color = "#fadc6e";
         }
         else if (Data[i].geometry.coordinates[2] > 300 && Data[i].geometry.coordinates[2] < 400) {
-            color = "#fa916e";
+            color = "orange";
         }
         else if (Data[i].geometry.coordinates[2] > 400 && Data[i].geometry.coordinates[2] < 500) {
             color = "#fa6e6e";
